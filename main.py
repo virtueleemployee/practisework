@@ -116,17 +116,7 @@ async def showing():
 
 
 
- #   CRUD OPERATION   (BEFORE USING DATABASE I USING LIST IT ACT AS A DB)
 
-class items(BaseModel):
-    id :int
-    name:str
-    price:float
-
-@app.post("/list",response_model = items)
-
-async def showlist(item:items):
-    return item 
 
 
 
